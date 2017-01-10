@@ -27,12 +27,11 @@ module.exports = function (fis) {
     });
 
     fis.match('**.vue:js', {
-        parser: [
-            fis.plugin('babel-6.x', {
-                presets: ['es2015-loose', 'react', 'stage-3']
-            }),
-            fis.plugin('translate-es3ify', null, 'append')
-        ],
+        parser: fis.plugin('babel-5.x', {
+            blacklist: ['regenerator'],
+            stage: 3,
+            // sourceMaps: true
+        }),
         optimizer: fis.plugin('uglify-js')
     })
 
