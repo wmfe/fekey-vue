@@ -20,7 +20,7 @@ module.exports = function (fis) {
         isMod: true,
         rExt: 'js',
         useSameNameRequire: true,
-        parser: parserVuePlugin,
+        parser: fis.plugin('vue-loader'),
         useHash: true
     });
 
