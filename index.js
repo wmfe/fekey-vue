@@ -20,7 +20,9 @@ module.exports = function (fis) {
         isMod: true,
         rExt: 'js',
         useSameNameRequire: true,
-        parser: fis.plugin('vue-loader'),
+        parser: fis.plugin('vue-component', {
+            ccssScopedFlag: '__vuec__'
+        }),
         useHash: true
     });
 
