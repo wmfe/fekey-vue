@@ -5,9 +5,7 @@ var path = require('path');
 // 设置插件查找前缀
 
 module.exports = function (fis) {
-    fis.require.prefixes.unshift('yogurt');
     fis.require.prefixes.unshift('fekey');
-    fis.require.prefixes.unshift('fly');
     fis.set('project.fileType.text', 'vue');
     if (fis.require.paths && fis.require.paths.length) {
         fis.require.paths.splice(1, 0, path.join(__dirname, 'node_modules'));
