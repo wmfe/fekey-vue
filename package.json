@@ -1,6 +1,6 @@
 {
   "name": "fekey-vue",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "description": "Support vue in fekey",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,7 @@
     "fis3-parser-translate-es3ify": "0.0.2",
     "fekey-parser-vue": "",
     "fis3-postpackager-loader": "^1.5.2",
-    "fis3-postprocessor-autoprefixer": "^1.0.0",
-    "fis3-parser-vue-component": ""
+    "fis3-postprocessor-autoprefixer": "^1.0.0"
   },
   "keywords": [
     "fekey",

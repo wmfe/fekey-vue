@@ -18,7 +18,7 @@ module.exports = function (fis) {
         isMod: true,
         rExt: 'js',
         useSameNameRequire: true,
-        parser: fis.plugin('vue-component', {
+        parser: fis.plugin('vue', {
             ccssScopedFlag: '__vuec__'
         }),
         useHash: true
